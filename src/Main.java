@@ -1,6 +1,6 @@
 import com.engeto.Booking;
 import com.engeto.GuestsofHotel;
-import com.engeto.Rooms;
+import com.engeto.Room;
 import java.time.LocalDate;
 
 
@@ -11,9 +11,9 @@ public class Main {
         GuestsofHotel secondguest = new GuestsofHotel("Jan","Dvořáček", LocalDate.of(1995,05,05));
 
 
-        Rooms first = new Rooms(01,1,true,true,1000);
-        Rooms second = new Rooms(02,1,true,true,1000);
-        Rooms third = new Rooms(03,3,false,true,2400);
+        Room first = new Room(01,1,true,true,1000);
+        Room second = new Room(02,1,true,true,1000);
+        Room third = new Room(03,3,false,true,2400);
 
         Booking booking = new Booking();
 

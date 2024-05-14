@@ -1,6 +1,6 @@
 package com.engeto;
 
-public class Rooms {
+public class Room {
     private int numberofRoom;
     private int numberofBeds;
     boolean balcony;
@@ -47,7 +47,7 @@ public class Rooms {
         this.pricePerNight = pricePerNight;
     }
 
-    public Rooms(int numberofRoom, int numberofBeds, boolean balcony, boolean seeview, int pricePerNight) {
+    public Room(int numberofRoom, int numberofBeds, boolean balcony, boolean seeview, int pricePerNight) {
         this.numberofRoom = numberofRoom;
         this.numberofBeds = numberofBeds;
         this.balcony = balcony;
