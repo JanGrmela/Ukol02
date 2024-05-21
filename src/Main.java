@@ -1,5 +1,5 @@
 import com.engeto.Booking;
-import com.engeto.GuestsofHotel;
+import com.engeto.GuestsOfHotel;
 import com.engeto.Room;
 import java.time.LocalDate;
 
@@ -7,8 +7,8 @@ import java.time.LocalDate;
 public class Main {
         public static void main(String[] args) {
 
-        GuestsofHotel firstguest = new GuestsofHotel( "Adéla", "Malíková",LocalDate.of(1993,3,13));
-        GuestsofHotel secondguest = new GuestsofHotel("Jan","Dvořáček", LocalDate.of(1995,05,05));
+        GuestsOfHotel firstguest = new GuestsOfHotel( "Adéla", "Malíková",LocalDate.of(1993,3,13));
+        GuestsOfHotel secondguest = new GuestsOfHotel("Jan","Dvořáček", LocalDate.of(1995,05,05));
 
 
         Room first = new Room(01,1,true,true,1000);
@@ -20,17 +20,13 @@ public class Main {
 
 
 
+        System.out.println(firstguest.getName()+" " +firstguest.getSurname()+" "+"("+ firstguest.getDateOfBirth()+")");
+        System.out.println(secondguest.getName()+" "+secondguest.getSurname()+" "+"("+secondguest.getDateOfBirth()+")");
 
 
-
-
-
-        System.out.println(firstguest.getName()+" " +firstguest.getSurname()+" "+"("+ firstguest.getBirthdate()+")");
-        System.out.println(secondguest.getName()+" "+secondguest.getSurname()+" "+"("+secondguest.getBirthdate()+")");
-
-
-        System.out.println("číslo pokoje:"+first.getNumberofRoom()+" "+first.getNumberofBeds()+" "+ first.getPricePerNight() + first.isBalcony()+ first.isSeeview());
-
+        System.out.println("číslo pokoje:"+first.getRoomNumber()+" "+first.getNumberOfBeds()+" "+ first.getPricePerNight() + " "+ first.isHasBalcony()+" "+ first.isHasSeaView());
+        System.out.println("číslo pokoje:"+second.getRoomNumber()+" "+second.getNumberOfBeds()+" "+ second.getPricePerNight() +" "+ second.isHasBalcony()+" "+ second.isHasSeaView());
+        System.out.println("číslo pokoje:"+ third.getRoomNumber()+" "+ third.getNumberOfBeds()+" "+ third.getPricePerNight() +" "+ third.isHasBalcony()+" "+ third.isHasSeaView());
         }
 
 }

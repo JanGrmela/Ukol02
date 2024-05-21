@@ -1,45 +1,45 @@
 package com.engeto;
 
 public class Room {
-    private int numberofRoom;
-    private int numberofBeds;
-    boolean balcony;
-    boolean seeview;
-    private int pricePerNight;
+    private int roomNumber;
+    private int numberOfBeds;
+    boolean hasBalcony;
+    boolean hasSeaView;
+    private double pricePerNight;
 
-    public int getNumberofRoom() {
-        return numberofRoom;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public void setNumberofRoom(int numberofRoom) {
-        this.numberofRoom = numberofRoom;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
-    public int getNumberofBeds() {
-        return numberofBeds;
+    public int getNumberOfBeds() {
+        return numberOfBeds;
     }
 
-    public void setNumberofBeds(int numberofBeds) {
-        this.numberofBeds = numberofBeds;
+    public void setNumberOfBeds(int numberOfBeds) {
+        this.numberOfBeds = numberOfBeds;
     }
 
-    public boolean isBalcony() {
-        return balcony;
+    public boolean isHasBalcony() {
+        return hasBalcony;
     }
 
-    public void setBalcony(boolean balcony) {
-        this.balcony = balcony;
+    public void setHasBalcony(boolean hasBalcony) {
+        this.hasBalcony = hasBalcony;
     }
 
-    public boolean isSeeview() {
-        return seeview;
+    public boolean isHasSeaView() {
+        return hasSeaView;
     }
 
-    public void setSeeview(boolean seeview) {
-        this.seeview = seeview;
+    public void setHasSeaView(boolean hasSeaView) {
+        this.hasSeaView = hasSeaView;
     }
 
-    public int getPricePerNight() {
+    public double getPricePerNight() {
         return pricePerNight;
     }
 
@@ -47,11 +47,11 @@ public class Room {
         this.pricePerNight = pricePerNight;
     }
 
-    public Room(int numberofRoom, int numberofBeds, boolean balcony, boolean seeview, int pricePerNight) {
-        this.numberofRoom = numberofRoom;
-        this.numberofBeds = numberofBeds;
-        this.balcony = balcony;
-        this.seeview = seeview;
+    public Room(int numberofRoom, int numberofBeds, boolean balcony, boolean seeview, double pricePerNight) {
+        this.roomNumber = numberofRoom;
+        this.numberOfBeds = numberofBeds;
+        this.hasBalcony = balcony;
+        this.hasSeaView = seeview;
         this.pricePerNight = pricePerNight;
 
 
