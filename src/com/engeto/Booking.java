@@ -1,16 +1,21 @@
 package com.engeto;
 
+import java.util.List;
+
 public class Booking {
-        int roomNumber;
+        private int roomNumber;
+        private List<GuestsOfHotel>guestsOfHotels;
         private String checkInDate;
         private String checkOutDate;
-        private String stayTape;
+        private boolean stayType;
 
-        public Booking() {
+        public Booking(int roomNumber, List<GuestsOfHotel> guestsOfHotels, boolean stayType, String checkOutDate, String checkInDate) {
                 this.roomNumber = roomNumber;
+                this.guestsOfHotels = guestsOfHotels;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
-                this.stayTape = stayTape;
+                this.stayType = stayType;
+
         }
 
         public int getRoomNumber() {
@@ -19,6 +24,14 @@ public class Booking {
 
         public void setRoomNumber(int roomNumber) {
                 this.roomNumber = roomNumber;
+        }
+
+        public List<GuestsOfHotel> getGuestsOfHotels() {
+                return guestsOfHotels;
+        }
+
+        public void setGuestsOfHotels(List<GuestsOfHotel> guestsOfHotels) {
+                this.guestsOfHotels = guestsOfHotels;
         }
 
         public String getCheckInDate() {
@@ -37,11 +50,13 @@ public class Booking {
                 this.checkOutDate = checkOutDate;
         }
 
-        public String getStayTape() {
-                return stayTape;
+        public boolean isStayType() {
+                return stayType;
         }
 
-        public void setStayTape(String stayTape) {
-                this.stayTape = stayTape;
+        public void setStayType(boolean stayType) {
+                this.stayType = stayType;
         }
 }
+
+
