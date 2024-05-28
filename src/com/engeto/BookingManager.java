@@ -8,24 +8,24 @@ public class BookingManager {
     int index;
 
 //Vložení rezervace do seznamu
-    public void addBooking(Booking newBooking) {
-            bookingsList.add(newBooking);
+    public void addBooking(Reservation newReservation) {
+            bookingsList.add(newReservation);
 
 }
 
 // Získání rezervace se zadaným indexem ze seznamu
     public static class bookingList {
-        public static Booking getBookingByIndex(List<Booking>bookingList, int index) {
-            if (index >= 0 && index < bookingList.size()) {
-                return bookingList.get(index);
+        public static Reservation getBookingByIndex(List<Reservation> reservationList, int index) {
+            if (index >= 0 && index < reservationList.size()) {
+                return reservationList.get(index);
             }
             return null;
         }
     }
 // Získání seznamu rezervací
-    List<Booking> bookingList = bookingList.getAllBooking();
+    List<Reservation> reservationList = reservationList.getAllBooking();
 
 //Vymazání seznamu rezervací:
-    List<Booking> bookingList = new ArrayList<>();
-    bookingList.clear();
+    List<Reservation> reservationList = new ArrayList<>();
+    //}  bookingList.clear();
 
