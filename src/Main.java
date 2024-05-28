@@ -37,11 +37,12 @@ public class Main {
 
                 for (Reservation reservation : reservationList) ;{
 
-                System.out.println("All Reservations:" + reservation());
+                System.out.println("All Reservations:" + reservationList);
                 }
 
 
         }
+
 
 
 
