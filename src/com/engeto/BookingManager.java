@@ -1,5 +1,6 @@
 package com.engeto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BookingManager {
@@ -13,7 +14,7 @@ public class BookingManager {
 }
 
 // Získání rezervace se zadaným indexem ze seznamu
-    public class bookingList {
+    public static class bookingList {
         public static Booking getBookingByIndex(List<Booking>bookingList, int index) {
             if (index >= 0 && index < bookingList.size()) {
                 return bookingList.get(index);
@@ -22,8 +23,9 @@ public class BookingManager {
         }
     }
 // Získání seznamu rezervací
-    List<Reservation> reservations = reservationService.getAllReservations();
+    List<Booking> bookingList = bookingList.getAllBooking();
 
 //Vymazání seznamu rezervací:
-    List<Reservation> reservations = new ArrayList<>();
-    reservations.clear();
+    List<Booking> bookingList = new ArrayList<>();
+    bookingList.clear();
+
