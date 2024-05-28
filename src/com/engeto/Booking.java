@@ -11,7 +11,7 @@ public class Booking {
 
 
 
-        public Booking() {
+        public Booking(int roomNumber, List<GuestsOfHotel> guestsOfHotels,String checkInDate,String checkOutDate, boolean stayType) {
                 this.roomNumber = roomNumber;
                 this.guestsOfHotels = guestsOfHotels;
                 this.checkInDate = checkInDate;
@@ -61,7 +61,9 @@ public class Booking {
 
 
         public boolean getBookingList() {
-            return false;
+
+                return getBookingList();
+
         }
 }
 
