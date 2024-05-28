@@ -4,18 +4,19 @@ import java.util.List;
 
 public class Booking {
         private int roomNumber;
-        private List<GuestsOfHotel>guestsOfHotels;
+        private List<GuestsOfHotel> guestsOfHotels;
         private String checkInDate;
         private String checkOutDate;
         private boolean stayType;
 
-        public Booking(int roomNumber, List<GuestsOfHotel> guestsOfHotels, boolean stayType, String checkOutDate, String checkInDate) {
+
+
+        public Booking() {
                 this.roomNumber = roomNumber;
                 this.guestsOfHotels = guestsOfHotels;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
-
         }
 
         public int getRoomNumber() {
@@ -56,6 +57,11 @@ public class Booking {
 
         public void setStayType(boolean stayType) {
                 this.stayType = stayType;
+        }
+
+
+        public boolean getBookingList() {
+            return false;
         }
 }
 
