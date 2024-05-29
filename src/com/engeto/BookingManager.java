@@ -25,14 +25,16 @@ public class BookingManager {
 
     // Získání seznamu rezervací
     public void ListOfAllReservations() {
-           List<Reservation> allReservations = reservationList.get(Reservation);
+        List<Reservation> allReservations = reservationList.get(Reservation);
+    }
 
 
     //Vymazání seznamu rezervací:
-           List<Reservation> reservationList = new ArrayList<>();
-            {
+    private void ClearAllReaservations() {
+        List<Reservation> reservationList = new ArrayList<>(); {
             reservationList.clear();
-            }
         }
     }
+    }
 
+    //
