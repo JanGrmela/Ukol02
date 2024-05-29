@@ -30,11 +30,25 @@ public class BookingManager {
 
 
     //Vymazání seznamu rezervací:
-    private void ClearAllReaservations() {
-        List<Reservation> reservationList = new ArrayList<>(); {
+    public void ClearAllReaservations() {
+        List<Reservation> reservationList = new ArrayList<>();
+        {
             reservationList.clear();
         }
     }
+
+
+    //Rezervace s pracovnim pobytem
+    public void NumberOfWorkingReservations() {
     }
 
-    //
+
+
+     //Průměrný počet hostů na rezervaci
+     public void AverageNumberOfGuests() {
+
+        }
+
+
+    }
+}
