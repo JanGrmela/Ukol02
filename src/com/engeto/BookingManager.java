@@ -39,7 +39,11 @@ public class BookingManager {
 
 
     //Rezervace s pracovnim pobytem
-    public void NumberOfWorkingReservations() {
+    public void NumberOfWorkingReservations(List<Reservation> reservationList, boolean stayType,) {
+
+        IF(stayType == True) {
+            workingReservations = add
+        }
     }
 
 
