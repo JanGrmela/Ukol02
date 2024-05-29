@@ -28,7 +28,7 @@ public class BookingManager {
            List<Reservation> allReservations = reservationList.get(Reservation);
 
 
-        //Vymazání seznamu rezervací:
+    //Vymazání seznamu rezervací:
            List<Reservation> reservationList = new ArrayList<>();
             {
             reservationList.clear();
