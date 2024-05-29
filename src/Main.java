@@ -27,16 +27,14 @@ public class Main {
 
 
 // Rezervace v hotelu
-                Reservation one = new Reservation(1, "Adéla", "23.2.24", "25.2.24", true);
-                Reservation two = new Reservation(2, "Tonda", "24.3.24", "26.4.24", false);
+                Reservation one = new Reservation();
+                Reservation two = new Reservation();
 
                 List<Reservation> reservationList = new ArrayList<>();
                 reservationList.add(one);
                 reservationList.add(two);
                 reservationList.remove(0);
-
                 for (Reservation reservation : reservationList) ;{
-
                 System.out.println("All Reservations:" + reservationList);
                 }
 

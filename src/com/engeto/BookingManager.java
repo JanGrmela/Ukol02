@@ -6,33 +6,34 @@ import java.util.List;
 public class BookingManager {
     int index;
 
-//Vložení rezervace do seznamu
+    //Vložení rezervace do seznamu
     private List<Reservation> reservationList = new ArrayList<>();
 
     public BookingManager(List<Reservation> newReservations) {
         this.reservationList.addAll(newReservations);
     }
 
-    public void addReservation(Reservation reservations) {
 
-        reservationList.add(reservations);
-     }
+    // Získání rezervace se zadaným indexem ze seznamu
+    public Reservation getReservationByIndex(List<Reservation> reservationList, int index) {
+        if (index >= 0 && index < reservationList.size()) {
+            return reservationList.get(index);
+        } else {
+            return null;
+        }
+    }
 
-}
+    // Získání seznamu rezervací
+    public void ListOfAllReservations() {
+        List<Reservation> allReservations = reservationList.getAllReservations();
 
-// Získání rezervace se zadaným indexem ze seznamu
-    public static class bookingList {
-        public static Reservation getBookingByIndex(List<Reservation> reservationList, int index) {
-            if (index >= 0 && index < reservationList.size()) {
-                return reservationList.get(index);
+
+        //Vymazání seznamu rezervací:
+    private void ClearAllReservations(List<Reservation>reservationList) ;{
+            List<Reservation> reservationList = new ArrayList<>();
+            {
+                reservationList.clear();
             }
-
-
-// Získání seznamu rezervací
-    List<Reservation> newreseravtion = List.of(new Reservation());
-
-
-//Vymazání seznamu rezervací:
-    List<Reservation> reservationList = new ArrayList<>();
-    //}  bookingList.clear();
-
+        }
+    }
+}

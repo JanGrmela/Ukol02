@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="create class BookingManager">
+    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="repair BookingManager&#10;reservationList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/BookingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +222,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716892972826</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="repair Main reservationList">
+      <option name="closed" value="true" />
+      <created>1716920426979</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716920426979</updated>
+    </task>
+    <task id="LOCAL-00017" summary="repair BookingManager&#10;reservationList">
+      <option name="closed" value="true" />
+      <created>1716920460470</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716920460470</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,17 +273,8 @@
     <MESSAGE value="repair clas Booking" />
     <MESSAGE value="repair class Reservation" />
     <MESSAGE value="create class BookingManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="create class BookingManager" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/engeto/BookingManager.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="repair Main reservationList" />
+    <MESSAGE value="repair BookingManager&#10;reservationList" />
+    <option name="LAST_COMMIT_MESSAGE" value="repair BookingManager&#10;reservationList" />
   </component>
 </project>

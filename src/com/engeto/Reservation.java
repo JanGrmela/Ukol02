@@ -7,7 +7,7 @@ public class Reservation {
         private String checkOutDate;
         private boolean stayType;
 
-        public Reservation(int roomNumber, String guestsOfHotels, String checkInDate, String checkOutDate, boolean stayType) {
+        public Reservation() {
                 this.roomNumber = roomNumber;
                 this.guestsOfHotels = guestsOfHotels;
                 this.checkInDate = checkInDate;
