@@ -33,6 +33,11 @@ public class Main {
                 System.out.println("První reservace: " + "pokoj č.: "+reservationFirst.getRoomOfNumber()+" ;host: "+ reservationFirst.getGuestsOfHotel() +" ;příjezd: "+reservationFirst.getCheckInDate()+" ;odjezd: "+reservationFirst.getCheckOutDate()+" ;typ pobytu: "+reservationFirst.isStayType());
                 System.out.println("Druhá reservace: " + "pokoj č.: "+reservationSecond.getRoomOfNumber()+" ;host: "+ reservationSecond.getGuestsOfHotel() +" ;příjezd: "+reservationSecond.getCheckInDate()+" ;odjezd: "+reservationSecond.getCheckOutDate()+" ;typ pobytu: "+reservationSecond.isStayType());
 
+// Seznam vše rezervací
+
+                System.out.println("Seznam všech rezervací:");
+
+
 
                 }
 
