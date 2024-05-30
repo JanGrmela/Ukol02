@@ -68,16 +68,7 @@ public class Main {
 
 
 
-// Rezervace v hotelu
-        //        Reservation one = new Reservation();
-        //      Reservation two = new Reservation();
 
-        //        List<Reservation> reservationList = new ArrayList<>();
-        //        reservationList.add(one);
-        //        reservationList.add(two);
-        //        reservationList.remove(0);
-        //        for (Reservation reservation : reservationList) {
-        //        System.out.println("All Reservations:" + reservationList);
 
 
 
