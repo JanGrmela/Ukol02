@@ -18,8 +18,6 @@ public class Main {
                 System.out.println(secondguest.getName() + " " + secondguest.getSurname() + " " + "(" + secondguest.getDateOfBirth() + ")");
 
 // Evidence pokojů
-
-
                 Room first = new Room(01, 1, true, true, 1000);
                 Room second = new Room(02, 1, true, true, 1000);
                 Room third = new Room(03, 3, false, true, 2400);

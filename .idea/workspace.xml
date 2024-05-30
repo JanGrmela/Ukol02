@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="get new classes">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="create Reservation.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ukol03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ukol02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +313,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717067673093</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="create Reservation.java">
+      <option name="closed" value="true" />
+      <created>1717072320623</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717072320623</updated>
+    </task>
+    <task id="LOCAL-00027" summary="create Reservation.java">
+      <option name="closed" value="true" />
+      <created>1717072474836</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717072474836</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,6 +368,7 @@
     <MESSAGE value="repair BookingManager&#10;reservationList" />
     <MESSAGE value="repair listof reservations" />
     <MESSAGE value="get new classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="get new classes" />
+    <MESSAGE value="create Reservation.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Reservation.java" />
   </component>
 </project>

@@ -16,9 +16,43 @@ public class Room {
         this.pricePerNight = pricePerNight;
     }
 
+    public int getNumberOfRoom() {
+        return numberOfRoom;
+    }
 
+    public void setNumberOfRoom(int numberOfRoom) {
+        this.numberOfRoom = numberOfRoom;
+    }
 
+    public int getNumberOfBeds() {
+        return numberOfBeds;
+    }
 
+    public void setNumberOfBeds(int numberOfBeds) {
+        this.numberOfBeds = numberOfBeds;
+    }
 
+    public boolean isHasBalcony() {
+        return hasBalcony;
+    }
 
+    public void setHasBalcony(boolean hasBalcony) {
+        this.hasBalcony = hasBalcony;
+    }
+
+    public boolean isHasSeaView() {
+        return hasSeaView;
+    }
+
+    public void setHasSeaView(boolean hasSeaView) {
+        this.hasSeaView = hasSeaView;
+    }
+
+    public double getPricePerNight() {
+        return pricePerNight;
+    }
+
+    public void setPricePerNight(double pricePerNight) {
+        this.pricePerNight = pricePerNight;
+    }
 }
