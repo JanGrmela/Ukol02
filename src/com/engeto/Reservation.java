@@ -15,6 +15,8 @@ public class Reservation {
                 this.stayType = stayType;
         }
 
+
+
         public int getRoomOfNumber() {
                 return roomOfNumber;
         }
