@@ -8,13 +8,11 @@ public class Reservation {
         private boolean stayType;
 
         public Reservation(int roomOfNumber, String guestsOfHotel, String checkInDate, String checkOutDate, boolean stayType) {
-             this(roomOfNumber,guestsOfHotel,checkInDate,checkOutDate,stayType);
-
-             //   this.roomOfNumber = roomOfNumber;
-             //   this.guestsOfHotel = guestsOfHotel;
-             //   this.checkInDate = checkInDate;
-             //   this.checkOutDate = checkOutDate;
-             //   this.stayType = stayType;
+                this.roomOfNumber = roomOfNumber;
+                this.guestsOfHotel = guestsOfHotel;
+                this.checkInDate = checkInDate;
+                this.checkOutDate = checkOutDate;
+                this.stayType = stayType;
         }
 
 }
