@@ -2,19 +2,25 @@ package com.engeto;
 
 public class Reservation {
         private int roomNumber;
-        private String guestsOfHotels;
+        private String guestsOfHotel;
         private String checkInDate;
         private String checkOutDate;
         private boolean stayType;
 
         public Reservation() {
                 this.roomNumber = roomNumber;
-                this.guestsOfHotels = guestsOfHotels;
+                this.guestsOfHotel = guestsOfHotel;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
 
         }
+
+        Reservation
+
+
+
+
 
         public int getRoomNumber() {
                 return roomNumber;
@@ -25,11 +31,11 @@ public class Reservation {
         }
 
         public String getGuestsOfHotels() {
-                return guestsOfHotels;
+                return guestsOfHotel;
         }
 
-        public void setGuestsOfHotels(String guestsOfHotels) {
-                this.guestsOfHotels = guestsOfHotels;
+        public void setGuestsOfHotels(String guestsOfHotel) {
+                this.guestsOfHotel = guestsOfHotel;
         }
 
         public String getCheckInDate() {

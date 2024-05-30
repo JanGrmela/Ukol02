@@ -25,6 +25,28 @@ public class Main {
                 System.out.println("číslo pokoje:" + second.getRoomNumber() + " " + second.getNumberOfBeds() + " " + second.getPricePerNight() + " " + second.isHasBalcony() + " " + second.isHasSeaView());
                 System.out.println("číslo pokoje:" + third.getRoomNumber() + " " + third.getNumberOfBeds() + " " + third.getPricePerNight() + " " + third.isHasBalcony() + " " + third.isHasSeaView());
 
+// Reservace dle zadání
+                Reservations reservationList =
+                                String guestsOfHotels = "Adéla";
+                                int roomNumber = 1;
+                                String checkInDate = "19th July 2021";
+                                String checkOutDate = "26th July 2021";
+
+                                System.out.println("Reservation Details:");
+                                System.out.println("Guest Name: " + guestName);
+                                System.out.println("Room Number: " + roomNumber);
+                                System.out.println("Check-in Date: " + checkInDate);
+                                System.out.println("Check-out Date: " + checkOutDate);
+                        }
+                }
+
+
+
+
+
+
+
+
 
 // Rezervace v hotelu
                 Reservation one = new Reservation();
@@ -34,7 +56,7 @@ public class Main {
                 reservationList.add(one);
                 reservationList.add(two);
                 reservationList.remove(0);
-                for (Reservation reservation : reservationList) ;{
+                for (Reservation reservation : reservationList) {
                 System.out.println("All Reservations:" + reservationList);
                 }
 

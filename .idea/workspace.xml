@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="get new classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/BookingManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717001058224</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="get new classes">
+      <option name="closed" value="true" />
+      <created>1717001595498</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717001595498</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
