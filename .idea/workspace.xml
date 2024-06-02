@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="List of reservations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +352,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717075506716</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="List of reservations">
+      <option name="closed" value="true" />
+      <created>1717084004245</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717084004245</updated>
+    </task>
+    <task id="LOCAL-00032" summary="List of reservations">
+      <option name="closed" value="true" />
+      <created>1717084082692</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717084082693</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
