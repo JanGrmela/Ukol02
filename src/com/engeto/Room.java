@@ -16,6 +16,8 @@ public class Room {
         this.pricePerNight = pricePerNight;
     }
 
+
+
     public int getNumberOfRoom() {
         return numberOfRoom;
     }

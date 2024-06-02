@@ -1,5 +1,9 @@
 package com.engeto;
 
+import org.w3c.dom.stylesheets.LinkStyle;
+
+import java.util.List;
+
 public class Reservation {
         private int roomOfNumber;
         private String guestsOfHotel;
@@ -7,56 +11,54 @@ public class Reservation {
         private String checkOutDate;
         private boolean stayType;
 
+
+
         public Reservation(int roomOfNumber, String guestsOfHotel, String checkInDate, String checkOutDate, boolean stayType) {
-                this.roomOfNumber = roomOfNumber;
-                this.guestsOfHotel = guestsOfHotel;
-                this.checkInDate = checkInDate;
-                this.checkOutDate = checkOutDate;
-                this.stayType = stayType;
+            this.roomOfNumber = roomOfNumber;
+            this.guestsOfHotel = guestsOfHotel;
+            this.checkInDate = checkInDate;
+            this.checkOutDate = checkOutDate;
+            this.stayType = stayType;
+
         }
-
-
 
         public int getRoomOfNumber() {
-                return roomOfNumber;
+            return roomOfNumber;
         }
-
         public void setRoomOfNumber(int roomOfNumber) {
-                this.roomOfNumber = roomOfNumber;
+            this.roomOfNumber = roomOfNumber;
         }
-
         public String getGuestsOfHotel() {
-                return guestsOfHotel;
+            return guestsOfHotel;
         }
-
         public void setGuestsOfHotel(String guestsOfHotel) {
-                this.guestsOfHotel = guestsOfHotel;
+            this.guestsOfHotel = guestsOfHotel;
         }
-
         public String getCheckInDate() {
-                return checkInDate;
+            return checkInDate;
         }
-
         public void setCheckInDate(String checkInDate) {
-                this.checkInDate = checkInDate;
+            this.checkInDate = checkInDate;
         }
-
         public String getCheckOutDate() {
-                return checkOutDate;
+            return checkOutDate;
         }
-
         public void setCheckOutDate(String checkOutDate) {
-                this.checkOutDate = checkOutDate;
+            this.checkOutDate = checkOutDate;
         }
-
         public boolean isStayType() {
-                return stayType;
+            return stayType;
+        }
+        public void setStayType(boolean stayType) {
+            this.stayType = stayType;
         }
 
-        public void setStayType(boolean stayType) {
-                this.stayType = stayType;
         }
-}
+
+
+
+
+
 
 
 

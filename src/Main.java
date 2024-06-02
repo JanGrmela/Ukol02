@@ -31,19 +31,29 @@ public class Main {
             Reservation reservationFirst = new Reservation(1, "Adela Malíková", "19.07.21", "26.07.21", false);
             Reservation reservationSecond = new Reservation(3, "Adela Malíková,Jan Dvořáček", "01.09.21", "14.09.21", false);
 
-            System.out.println("Reservation Details:");
+            System.out.println("Detail rezervací:");
             System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoomOfNumber() + " ;host: " + reservationFirst.getGuestsOfHotel() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
             System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoomOfNumber() + " ;host: " + reservationSecond.getGuestsOfHotel() + " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
 
-// Seznam vše rezervací
+ // Seznam hostů
+            List<GuestsOfHotel>guestsOfHotelList= new ArrayList<>();
+            guestsOfHotelList.add(firstguest);
+            guestsOfHotelList.add(secondguest);
+            System.out.println("Seznam hostů:");
+            for (GuestsOfHotel allguests : guestsOfHotelList) {
+                System.out.println(allguests.getName() + " " + allguests.getSurname() + " " + "(" + allguests.getDateOfBirth() + ")");
+            }
+
+// Seznam všech rezervací
             List<Reservation> reservationList = new ArrayList<>();
             reservationList.add(reservationFirst);
             reservationList.add(reservationSecond);
                 System.out.println("Seznam rezervací:");
             for (Reservation allreservation : reservationList) {
-                System.out.println(allreservation.getRoomOfNumber()+allreservation.getGuestsOfHotel()+allreservation.getCheckInDate()+allreservation.getCheckOutDate());
+                System.out.println("Pokoj č.: " + allreservation.getRoomOfNumber() + " ;host: " + allreservation.getGuestsOfHotel() + " ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+
                 }
-                           }
+        }
         }
 
 
