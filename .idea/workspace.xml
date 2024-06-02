@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="List of reservations">
+    <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="List of guests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/GuestsOfHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/GuestsOfHotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717337099520</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="List of guests">
+      <option name="closed" value="true" />
+      <created>1717354887497</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717354887497</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,6 +419,7 @@
     <MESSAGE value="create Getter and Setter" />
     <MESSAGE value="set up Reservations" />
     <MESSAGE value="List of reservations" />
-    <option name="LAST_COMMIT_MESSAGE" value="List of reservations" />
+    <MESSAGE value="List of guests" />
+    <option name="LAST_COMMIT_MESSAGE" value="List of guests" />
   </component>
 </project>

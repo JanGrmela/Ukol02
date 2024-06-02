@@ -1,25 +1,38 @@
 package com.engeto;
 
-import org.w3c.dom.stylesheets.LinkStyle;
-
-import java.util.List;
-
 public class Reservation {
         private int roomOfNumber;
         private String guestsOfHotel;
         private String checkInDate;
         private String checkOutDate;
         private boolean stayType;
+        private String guestsOfHotelList;
+        private String roomList;
 
 
 
-        public Reservation(int roomOfNumber, String guestsOfHotel, String checkInDate, String checkOutDate, boolean stayType) {
+
+        public Reservation(int roomOfNumber, String guestsOfHotel, String checkInDate, String checkOutDate, boolean stayType, String guestsOfHotelList, String roomList) {
             this.roomOfNumber = roomOfNumber;
             this.guestsOfHotel = guestsOfHotel;
             this.checkInDate = checkInDate;
             this.checkOutDate = checkOutDate;
             this.stayType = stayType;
+            this.guestsOfHotelList = guestsOfHotelList;
+            this.roomList = roomList;
 
+        }
+        public String getGuestsOfHotelList() {
+            return guestsOfHotelList;
+        }
+        public void setGuestsOfHotelList(String guestsOfHotelList) {
+            this.guestsOfHotelList = guestsOfHotelList;
+        }
+        public String getRoomList() {
+            return roomList;
+        }
+        public void setRoomList(String roomList) {
+            this.roomList = roomList;
         }
 
         public int getRoomOfNumber() {

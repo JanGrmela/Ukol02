@@ -22,14 +22,20 @@ public class Main {
             Room first = new Room(1, 1, true, true, 1000);
             Room second = new Room(2, 1, true, true, 1000);
             Room third = new Room(3, 3, false, true, 2400);
-            System.out.println("Evidence pokojů :");
-            System.out.println("číslo pokoje:" + first.getNumberOfRoom() + "; " + "počet lůžek:" + first.getNumberOfBeds() + "; " + "cena za noc:" + first.getPricePerNight() + "; " + "s balkónem:" + first.isHasBalcony() + "; " + "výhled na moře:" + first.isHasSeaView());
-            System.out.println("číslo pokoje:" + second.getNumberOfRoom() + "; " + "počet lůžek:" + second.getNumberOfBeds() + "; " + "cena za noc:" + second.getPricePerNight() + "; " + "s balkónem:" + second.isHasBalcony() + "; " + "výhled na moře:" + second.isHasSeaView());
-            System.out.println("číslo pokoje:" + third.getNumberOfRoom() + "; " + "počet lůžek:" + third.getNumberOfBeds() + "; " + "cena za noc:" + third.getPricePerNight() + "; " + "s balkónem:" + third.isHasBalcony() + "; " + "výhled na moře:" + third.isHasSeaView());
+
+ //Seznam pokojů
+            List<Room> roomList = new ArrayList<>();
+            roomList.add(first);
+            roomList.add(second);
+            roomList.add(third);
+            System.out.println("Seznam pokojů:");
+            for (Room allrooms : roomList) {
+                System.out.println("číslo pokoje:" + allrooms.getNumberOfRoom() + "; " + "počet lůžek:" + allrooms.getNumberOfBeds() + "; " + "cena za noc:" + allrooms.getPricePerNight() + "; " + "s balkónem:" + allrooms.isHasBalcony() + "; " + "výhled na moře:" + allrooms.isHasSeaView());
+            }
 
 // Reservace dle zadání
-            Reservation reservationFirst = new Reservation(1, "Adela Malíková", "19.07.21", "26.07.21", false);
-            Reservation reservationSecond = new Reservation(3, "Adela Malíková,Jan Dvořáček", "01.09.21", "14.09.21", false);
+            Reservation reservationFirst = new Reservation(1, "Adela Malíková", "19.07.21", "26.07.21", false, "Adéla Malíková", "1");
+            Reservation reservationSecond = new Reservation(3, "Adela Malíková,Jan Dvořáček", "01.09.21", "14.09.21", false, "Adéla Malíková,Jan Dvořáček", "3" );
 
             System.out.println("Detail rezervací:");
             System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoomOfNumber() + " ;host: " + reservationFirst.getGuestsOfHotel() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
