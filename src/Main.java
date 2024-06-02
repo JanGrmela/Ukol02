@@ -19,9 +19,9 @@ public class Main {
             System.out.println(secondguest.getName() + " " + secondguest.getSurname() + " " + "(" + secondguest.getDateOfBirth() + ")");
 
 // Evidence pokojů
-            Room first = new Room(1, 1, true, true, 1000);
-            Room second = new Room(2, 1, true, true, 1000);
-            Room third = new Room(3, 3, false, true, 2400);
+            Room first = new Room(1, 1, true, true, 1000, "Adéla Malíková"  );
+            Room second = new Room(2, 1, true, true, 1000, "Jan Dvořáček"  );
+            Room third = new Room(3, 3, false, true, 2400, "Adéla Malíková,Jan Dvořáček"  );
 
  //Seznam pokojů
             List<Room> roomList = new ArrayList<>();

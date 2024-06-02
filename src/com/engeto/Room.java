@@ -6,17 +6,26 @@ public class Room {
     boolean hasBalcony;
     boolean hasSeaView;
     private double pricePerNight;
+    private String guestsOfHotelList;
 
 
-    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight) {
+    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight,String guestsOfHotelList ) {
         this.numberOfRoom = numberOfRoom;
         this.numberOfBeds = numberOfBeds;
         this.hasBalcony = balcony;
         this.hasSeaView = seeview;
         this.pricePerNight = pricePerNight;
+        this.guestsOfHotelList = guestsOfHotelList;
+
     }
 
+    public String getGuestsOfHotelList() {
+        return guestsOfHotelList;
+    }
 
+    public void setGuestsOfHotelList(String guestsOfHotelList) {
+        this.guestsOfHotelList = guestsOfHotelList;
+    }
 
     public int getNumberOfRoom() {
         return numberOfRoom;
