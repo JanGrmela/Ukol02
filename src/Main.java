@@ -23,8 +23,8 @@ public class Main {
                 System.out.println(allguests.getName() + " " + allguests.getSurname() + " " + "(" + allguests.getDateOfBirth() + ")");
             }
 
-// Evidence pokojů
-            Room first = new Room(1, 1, true, true, 1000, "Adéla Malíková"  );
+//Evidence pokojů
+            Room first = new Room(1, 1, true, true, 1000, );
             Room second = new Room(2, 1, true, true, 1000, "Jan Dvořáček"  );
             Room third = new Room(3, 3, false, true, 2400, "Adéla Malíková,Jan Dvořáček"  );
 //Seznam pokojů

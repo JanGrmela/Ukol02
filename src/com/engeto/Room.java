@@ -1,30 +1,24 @@
 package com.engeto;
 
+import java.util.List;
+
 public class Room {
     private int numberOfRoom;
     private int numberOfBeds;
     boolean hasBalcony;
     boolean hasSeaView;
     private double pricePerNight;
-    private String guestsOfHotelList;
 
 
-    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight,String guestsOfHotelList ) {
+
+    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight, List<GuestsOfHotel> guestsOfHotelL) {
         this.numberOfRoom = numberOfRoom;
         this.numberOfBeds = numberOfBeds;
         this.hasBalcony = balcony;
         this.hasSeaView = seeview;
         this.pricePerNight = pricePerNight;
-        this.guestsOfHotelList = guestsOfHotelList;
 
-    }
 
-    public String getGuestsOfHotelList() {
-        return guestsOfHotelList;
-    }
-
-    public void setGuestsOfHotelList(String guestsOfHotelList) {
-        this.guestsOfHotelList = guestsOfHotelList;
     }
 
     public int getNumberOfRoom() {
@@ -66,4 +60,6 @@ public class Room {
     public void setPricePerNight(double pricePerNight) {
         this.pricePerNight = pricePerNight;
     }
+
+
 }
