@@ -4,44 +4,45 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Reservation {
-        private int roomOfNumber;
-        private String guestsOfHotel;
+        private Room room;
+        private GuestsOfHotel guestsOfHotel;
+        private List<GuestsOfHotel> guestsOfHotelList;
         private LocalDate checkInDate;
         private LocalDate checkOutDate;
         private boolean stayType;
-        private String guestsOfHotelList;
-        private String roomList;
-        private Room room;
-        private GuestsOfHotel otherguestsOfHotel;
-        private List<GuestsOfHotel> otherGuests;
 
 
-        public Reservation(int roomOfNumber, String guestsOfHotel, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType, String guestsOfHotelList, String roomList) {
-                this.roomOfNumber = roomOfNumber;
+        public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> guestsOfHotelList, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType) {
+                this.room = room;
                 this.guestsOfHotel = guestsOfHotel;
+                this.guestsOfHotelList = guestsOfHotelList;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
-                this.guestsOfHotelList = guestsOfHotelList;
-                this.roomList = roomList;
-
-
         }
 
-        public int getRoomOfNumber() {
-                return roomOfNumber;
+        public Room getRoom() {
+                return room;
         }
 
-        public void setRoomOfNumber(int roomOfNumber) {
-                this.roomOfNumber = roomOfNumber;
+        public void setRoom(Room room) {
+                this.room = room;
         }
 
-        public String getGuestsOfHotel() {
+        public GuestsOfHotel getGuestsOfHotel() {
                 return guestsOfHotel;
         }
 
-        public void setGuestsOfHotel(String guestsOfHotel) {
+        public void setGuestsOfHotel(GuestsOfHotel guestsOfHotel) {
                 this.guestsOfHotel = guestsOfHotel;
+        }
+
+        public List<GuestsOfHotel> getGuestsOfHotelList() {
+                return guestsOfHotelList;
+        }
+
+        public void setGuestsOfHotelList(List<GuestsOfHotel> guestsOfHotelList) {
+                this.guestsOfHotelList = guestsOfHotelList;
         }
 
         public LocalDate getCheckInDate() {
@@ -67,55 +68,5 @@ public class Reservation {
         public void setStayType(boolean stayType) {
                 this.stayType = stayType;
         }
-
-        public String getGuestsOfHotelList() {
-                return guestsOfHotelList;
-        }
-
-        public void setGuestsOfHotelList(String guestsOfHotelList) {
-                this.guestsOfHotelList = guestsOfHotelList;
-        }
-
-        public String getRoomList() {
-                return roomList;
-        }
-
-        public void setRoomList(String roomList) {
-                this.roomList = roomList;
-        }
-
-        public Room getRoom() {
-                return room;
-        }
-
-        public void setRoom(Room room) {
-                this.room = room;
-        }
-
-        public GuestsOfHotel getOtherguestsOfHotel() {
-                return otherguestsOfHotel;
-        }
-
-        public void setOtherguestsOfHotel(GuestsOfHotel otherguestsOfHotel) {
-                this.otherguestsOfHotel = otherguestsOfHotel;
-        }
-
-        public List<GuestsOfHotel> getOtherGuests() {
-                return otherGuests;
-        }
-
-        public void setOtherGuests(List<GuestsOfHotel> otherGuests) {
-                this.otherGuests = otherGuests;
-        }
 }
-
-
-
-
-
-
-
-
-
-
 
