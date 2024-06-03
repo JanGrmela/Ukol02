@@ -11,7 +11,7 @@ public class Room {
 
 
 
-    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight, List<GuestsOfHotel> guestsOfHotelL) {
+    public Room(int numberOfRoom, int numberOfBeds, boolean balcony, boolean seeview, double pricePerNight) {
         this.numberOfRoom = numberOfRoom;
         this.numberOfBeds = numberOfBeds;
         this.hasBalcony = balcony;

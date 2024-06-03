@@ -6,16 +6,16 @@ import java.util.List;
 public class Reservation {
         private Room room;
         private GuestsOfHotel guestsOfHotel;
-        private List<GuestsOfHotel> guestsOfHotelList;
+        private List<GuestsOfHotel> otherGuest;
         private LocalDate checkInDate;
         private LocalDate checkOutDate;
         private boolean stayType;
 
 
-        public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> guestsOfHotelList, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType) {
+        public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> otherGuest, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType) {
                 this.room = room;
                 this.guestsOfHotel = guestsOfHotel;
-                this.guestsOfHotelList = guestsOfHotelList;
+                this.otherGuest = otherGuest;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
@@ -37,12 +37,12 @@ public class Reservation {
                 this.guestsOfHotel = guestsOfHotel;
         }
 
-        public List<GuestsOfHotel> getGuestsOfHotelList() {
-                return guestsOfHotelList;
+        public List<GuestsOfHotel> getOtherGuest() {
+                return otherGuest;
         }
 
-        public void setGuestsOfHotelList(List<GuestsOfHotel> guestsOfHotelList) {
-                this.guestsOfHotelList = guestsOfHotelList;
+        public void setOtherGuest(List<GuestsOfHotel> otherGuest) {
+                this.otherGuest = otherGuest;
         }
 
         public LocalDate getCheckInDate() {
