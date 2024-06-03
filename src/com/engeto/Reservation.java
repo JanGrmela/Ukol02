@@ -12,7 +12,7 @@ public class Reservation {
         private String guestsOfHotelList;
         private String roomList;
         private Room room;
-        private GuestsOfHotel guestsOfHotel1;
+        private GuestsOfHotel otherguestsOfHotel;
         private List<GuestsOfHotel> otherGuests;
 
 
@@ -24,7 +24,6 @@ public class Reservation {
                 this.stayType = stayType;
                 this.guestsOfHotelList = guestsOfHotelList;
                 this.roomList = roomList;
-
 
 
         }
@@ -93,12 +92,12 @@ public class Reservation {
                 this.room = room;
         }
 
-        public GuestsOfHotel getGuestsOfHotel1() {
-                return guestsOfHotel1;
+        public GuestsOfHotel getOtherguestsOfHotel() {
+                return otherguestsOfHotel;
         }
 
-        public void setGuestsOfHotel1(GuestsOfHotel guestsOfHotel1) {
-                this.guestsOfHotel1 = guestsOfHotel1;
+        public void setOtherguestsOfHotel(GuestsOfHotel otherguestsOfHotel) {
+                this.otherguestsOfHotel = otherguestsOfHotel;
         }
 
         public List<GuestsOfHotel> getOtherGuests() {
@@ -109,6 +108,7 @@ public class Reservation {
                 this.otherGuests = otherGuests;
         }
 }
+
 
 
 
