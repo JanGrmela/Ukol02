@@ -34,9 +34,8 @@ public class Main {
             }
 
 // Reservace dle zadání
-            Reservation reservationFirst = new Reservation(1, "Adela Malíková", "19.07.21", "26.07.21", false, "Adéla Malíková", "1");
-            Reservation reservationSecond = new Reservation(3, "Adela Malíková,Jan Dvořáček", "01.09.21", "14.09.21", false, "Adéla Malíková,Jan Dvořáček", "3" );
-
+            Reservation reservationFirst = new Reservation(1, "Adela Malíková", LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), false, "Adela Malíková", "1" );
+            Reservation reservationSecond = new Reservation(3, "Adela Malíková,Jan Dvořáček", LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false, "Adéla Malíková,Jan Dvořáček", "3" );
             System.out.println("Detail rezervací:");
             System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoomOfNumber() + " ;host: " + reservationFirst.getGuestsOfHotel() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
             System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoomOfNumber() + " ;host: " + reservationSecond.getGuestsOfHotel() + " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());

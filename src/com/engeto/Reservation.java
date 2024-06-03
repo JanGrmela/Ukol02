@@ -1,10 +1,12 @@
 package com.engeto;
 
+import java.time.LocalDate;
+
 public class Reservation {
         private int roomOfNumber;
         private String guestsOfHotel;
-        private String checkInDate;
-        private String checkOutDate;
+        private LocalDate checkInDate;
+        private LocalDate checkOutDate;
         private boolean stayType;
         private String guestsOfHotelList;
         private String roomList;
@@ -12,7 +14,7 @@ public class Reservation {
 
 
 
-        public Reservation(int roomOfNumber, String guestsOfHotel, String checkInDate, String checkOutDate, boolean stayType, String guestsOfHotelList, String roomList) {
+        public Reservation(int roomOfNumber, String guestsOfHotel, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType, String guestsOfHotelList, String roomList) {
             this.roomOfNumber = roomOfNumber;
             this.guestsOfHotel = guestsOfHotel;
             this.checkInDate = checkInDate;
@@ -47,16 +49,16 @@ public class Reservation {
         public void setGuestsOfHotel(String guestsOfHotel) {
             this.guestsOfHotel = guestsOfHotel;
         }
-        public String getCheckInDate() {
+        public LocalDate getCheckInDate() {
             return checkInDate;
         }
-        public void setCheckInDate(String checkInDate) {
+        public void setCheckInDate(LocalDate checkInDate) {
             this.checkInDate = checkInDate;
         }
-        public String getCheckOutDate() {
+        public LocalDate getCheckOutDate() {
             return checkOutDate;
         }
-        public void setCheckOutDate(String checkOutDate) {
+        public void setCheckOutDate(LocalDate checkOutDate) {
             this.checkOutDate = checkOutDate;
         }
         public boolean isStayType() {
