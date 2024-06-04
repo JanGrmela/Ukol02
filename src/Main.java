@@ -41,12 +41,15 @@ public class Main {
 
 
 // Reservace dle zadání
-           Reservation reservationFirst = new Reservation(first,firstguest, guestsOfHotelList, LocalDate.of(2021, 8, 1), LocalDate.of(2021, 8, 8), true);
-           Reservation reservationSecond = new Reservation(second,secondguest, guestsOfHotelList, LocalDate.of(2021, 8, 10), LocalDate.of(2021, 8, 15), false);
+            List<GuestsOfHotel> otherGuest = new ArrayList<>();
+            otherGuest.add(secondguest);
+            otherGuest.add(firstguest);
+           Reservation reservationFirst = new Reservation(first,firstguest,guestsOfHotelList,LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), true);
+           Reservation reservationSecond = new Reservation(third,secondguest,guestsOfHotelList, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false);
 
-            System.out.println("Detail rezervací:");
-            System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoom().getNumberOfRoom() + " ;host: " + reservationFirst.getGuestsOfHotel() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
-            System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoom().getNumberOfRoom() + " ;host: " + reservationSecond.getGuestsOfHotel() + " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
+            System.out.println("Seznam rezervací:");
+            System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoom().getNumberOfRoom() + " ;host: " + reservationFirst.getGuestsOfHotel().getSurname()+" "+reservationFirst.getGuestsOfHotel().getName() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
+            System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoom().getNumberOfRoom() + " ;host: " + reservationSecond.getGuestsOfHotel().getSurname()+" "+reservationSecond.getGuestsOfHotel().getName() + ", "+reservationSecond.getOtherGuest().getFirst().getSurname()+" "+reservationSecond.getOtherGuest().getFirst().getName()+ " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
 
 
 // Seznam všech rezervací
@@ -55,7 +58,7 @@ public class Main {
             reservationList.add(reservationSecond);
                 System.out.println("Seznam rezervací:");
             for (Reservation allreservation : reservationList) {
-                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel() + " ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
 
                 }
         }

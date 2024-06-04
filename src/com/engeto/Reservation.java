@@ -15,7 +15,7 @@ public class Reservation {
         public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> otherGuest, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType) {
                 this.room = room;
                 this.guestsOfHotel = guestsOfHotel;
-                this.otherGuest = otherGuest;
+                this.otherGuest= otherGuest;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
