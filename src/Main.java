@@ -52,11 +52,11 @@ public class Main {
             System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoom().getNumberOfRoom() + " ;host: " + reservationSecond.getGuestsOfHotel().getSurname()+" "+reservationSecond.getGuestsOfHotel().getName() + ", "+reservationSecond.getOtherGuest().getFirst().getSurname()+" "+reservationSecond.getOtherGuest().getFirst().getName()+ " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
 
 
-// Seznam všech rezervací
+// Detaily všech rezervací
             List<Reservation> reservationList = new ArrayList<>();
             reservationList.add(reservationFirst);
             reservationList.add(reservationSecond);
-                System.out.println("Seznam rezervací:");
+                System.out.println("Detaily rezervací:");
             for (Reservation allreservation : reservationList) {
                 System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
 
