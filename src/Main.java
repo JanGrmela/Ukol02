@@ -7,8 +7,6 @@ import java.util.List;
 
 
 public class Main {
-
-
         public static void main(String[] args) {
 
 // Hosté dle zadání
@@ -18,7 +16,7 @@ public class Main {
             List<GuestsOfHotel>guestsOfHotelList= new ArrayList<>();
             guestsOfHotelList.add(firstguest);
             guestsOfHotelList.add(secondguest);
-            System.out.println("Seznam hostů:");
+                System.out.println("Seznam hostů:");
             for (GuestsOfHotel allguests : guestsOfHotelList) {
                 System.out.println(allguests.getName() + " " + allguests.getSurname() + " " + "(" + allguests.getDateOfBirth() + ")");
             }
@@ -33,23 +31,21 @@ public class Main {
             roomList.add(first);
             roomList.add(second);
             roomList.add(third);
-            System.out.println("Seznam pokojů:");
+                System.out.println("Seznam pokojů:");
             for (Room allrooms : roomList) {
                 System.out.println("číslo pokoje:" + allrooms.getNumberOfRoom() + "; " + "počet lůžek:" + allrooms.getNumberOfBeds() + "; " + "cena za noc:" + allrooms.getPricePerNight() + "; " + "s balkónem:" + allrooms.isHasBalcony() + "; " + "výhled na moře:" + allrooms.isHasSeaView());
             }
-
-
 
 // Reservace dle zadání
             List<GuestsOfHotel> otherGuest = new ArrayList<>();
             otherGuest.add(secondguest);
             otherGuest.add(firstguest);
-           Reservation reservationFirst = new Reservation(first,firstguest,guestsOfHotelList,LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), true);
-           Reservation reservationSecond = new Reservation(third,secondguest,guestsOfHotelList, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false);
+            Reservation reservationFirst = new Reservation(first,firstguest,guestsOfHotelList,LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), true);
+            Reservation reservationSecond = new Reservation(third,secondguest,guestsOfHotelList, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false);
 
-            System.out.println("Seznam rezervací:");
-            System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoom().getNumberOfRoom() + " ;host: " + reservationFirst.getGuestsOfHotel().getSurname()+" "+reservationFirst.getGuestsOfHotel().getName() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
-            System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoom().getNumberOfRoom() + " ;host: " + reservationSecond.getGuestsOfHotel().getSurname()+" "+reservationSecond.getGuestsOfHotel().getName() + ", "+reservationSecond.getOtherGuest().getFirst().getSurname()+" "+reservationSecond.getOtherGuest().getFirst().getName()+ " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
+                System.out.println("Seznam rezervací:");
+                System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoom().getNumberOfRoom() + " ;host: " + reservationFirst.getGuestsOfHotel().getSurname()+" "+reservationFirst.getGuestsOfHotel().getName() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
+                System.out.println("Druhá reservace: " + "pokoj č.: " + reservationSecond.getRoom().getNumberOfRoom() + " ;host: " + reservationSecond.getGuestsOfHotel().getSurname()+" "+reservationSecond.getGuestsOfHotel().getName() + ", "+reservationSecond.getOtherGuest().getFirst().getSurname()+" "+reservationSecond.getOtherGuest().getFirst().getName()+ " ;příjezd: " + reservationSecond.getCheckInDate() + " ;odjezd: " + reservationSecond.getCheckOutDate() + " ;typ pobytu: " + reservationSecond.isStayType());
 
 
 // Detaily všech rezervací
