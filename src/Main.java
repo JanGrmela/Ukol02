@@ -83,7 +83,7 @@ public class Main {
                 System.out.println("Vymazání seznamu rezervací:");
                 System.out.println("Seznam rezervací je vymazán");
             for (Reservation allreservation : reservationList) {
-                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+
 
             }
 
