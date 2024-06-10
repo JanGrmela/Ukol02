@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.nio.file.Files.size;
 
 
 public class Main {
@@ -68,7 +67,6 @@ public class Main {
                 System.out.println("Detaily rezervací po vložení:");
             for (Reservation allreservation : reservationList) {
                 System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
-
 
             }
 //Získání rezervace se zadaným indexem ze seznamu
