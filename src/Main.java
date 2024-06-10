@@ -1,9 +1,12 @@
+import com.engeto.BookingManager;
 import com.engeto.GuestsOfHotel;
 import com.engeto.Reservation;
 import com.engeto.Room;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.nio.file.Files.size;
 
 
 public class Main {
@@ -79,21 +82,24 @@ public class Main {
                 System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
             }
 //Vymazání seznamu rezervací
-            reservationList.clear();
+            //reservationList.clear();
                 System.out.println("Vymazání seznamu rezervací:");
                 System.out.println("Seznam rezervací je vymazán");
             for (Reservation allreservation : reservationList) {
-
-
             }
 
 
-        }
 
 
 
 
         }
+
+
+
+
+    }
+
 
 
 
