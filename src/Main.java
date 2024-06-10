@@ -57,7 +57,42 @@ public class Main {
                 System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
 
                 }
+
+// Vložení rezervace do seznamu
+
+           Reservation reservation= new Reservation(second,firstguest,guestsOfHotelList,LocalDate.of(2021, 8, 1), LocalDate.of(2021, 8, 14), false);
+            reservationList.add(reservation);
+                System.out.println("Detaily rezervací po vložení:");
+            for (Reservation allreservation : reservationList) {
+                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+
+
+            }
+//Získání rezervace se zadaným indexem ze seznamu
+            int index = 2;
+                System.out.println("Rezervace se zadaným indexem:");
+                System.out.println("Pokoj č.: " + reservationList.get(index).getRoom().getNumberOfRoom() + " ;host: " + reservationList.get(index).getGuestsOfHotel().getName()+" "+reservationList.get(index).getGuestsOfHotel().getSurname()+", "+ reservationList.get(index).getOtherGuest().getFirst().getName()+" "+reservationList.get(index).getOtherGuest().getFirst().getSurname()+" ;příjezd: " + reservationList.get(index).getCheckInDate() + " ;odjezd: " + reservationList.get(index).getCheckOutDate() + " ;typ pobytu: " + reservationList.get(index).isStayType());
+
+//Získání seznamu rezervací
+                System.out.println("Seznam rezervací:");
+            for (Reservation allreservation : reservationList) {
+                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+            }
+//Vymazání seznamu rezervací
+            reservationList.clear();
+                System.out.println("Vymazání seznamu rezervací:");
+                System.out.println("Seznam rezervací je vymazán");
+            for (Reservation allreservation : reservationList) {
+                System.out.println("Pokoj č.: " + allreservation.getRoom().getNumberOfRoom() + " ;host: " + allreservation.getGuestsOfHotel().getName()+" "+allreservation.getGuestsOfHotel().getSurname()+", "+ allreservation.getOtherGuest().getFirst().getName()+" "+allreservation.getOtherGuest().getFirst().getSurname()+" ;příjezd: " + allreservation.getCheckInDate() + " ;odjezd: " + allreservation.getCheckOutDate() + " ;typ pobytu: " + allreservation.isStayType());
+
+            }
+
+
         }
+
+
+
+
         }
 
 
