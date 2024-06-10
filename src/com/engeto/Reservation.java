@@ -10,15 +10,22 @@ public class Reservation {
         private LocalDate checkInDate;
         private LocalDate checkOutDate;
         private boolean stayType;
+        private int numberOfGuests;
 
 
-        public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> otherGuest, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType) {
+
+
+        public Reservation(Room room, GuestsOfHotel guestsOfHotel, List<GuestsOfHotel> otherGuest, LocalDate checkInDate, LocalDate checkOutDate, boolean stayType, int numberOfGuests) {
                 this.room = room;
                 this.guestsOfHotel = guestsOfHotel;
                 this.otherGuest= otherGuest;
                 this.checkInDate = checkInDate;
                 this.checkOutDate = checkOutDate;
                 this.stayType = stayType;
+                this.numberOfGuests = otherGuest.size();
+
+
+
         }
 
         public Room getRoom() {
@@ -68,5 +75,11 @@ public class Reservation {
         public void setStayType(boolean stayType) {
                 this.stayType = stayType;
         }
+
+        public int getNumberOfGuests() {
+                return otherGuest.size();
+        }
+
+
 }
 
