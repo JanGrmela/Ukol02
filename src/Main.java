@@ -42,8 +42,8 @@ public class Main {
             List<GuestsOfHotel> otherGuest = new ArrayList<>();
             otherGuest.add(secondguest);
             otherGuest.add(firstguest);
-            Reservation reservationFirst = new Reservation(first,firstguest,guestsOfHotelList,LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), true);
-            Reservation reservationSecond = new Reservation(third,secondguest,guestsOfHotelList, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false);
+            Reservation reservationFirst = new Reservation(first,firstguest,guestsOfHotelList,LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), true, otherGuest.size());
+            Reservation reservationSecond = new Reservation(third,secondguest,guestsOfHotelList, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), false, otherGuest.size());
 
                 System.out.println("Seznam rezervací:");
                 System.out.println("První reservace: " + "pokoj č.: " + reservationFirst.getRoom().getNumberOfRoom() + " ;host: " + reservationFirst.getGuestsOfHotel().getSurname()+" "+reservationFirst.getGuestsOfHotel().getName() + " ;příjezd: " + reservationFirst.getCheckInDate() + " ;odjezd: " + reservationFirst.getCheckOutDate() + " ;typ pobytu: " + reservationFirst.isStayType());
@@ -62,7 +62,7 @@ public class Main {
 
 // Vložení rezervace do seznamu
 
-           Reservation reservation= new Reservation(second,firstguest,guestsOfHotelList,LocalDate.of(2021, 8, 1), LocalDate.of(2021, 8, 14), false);
+           Reservation reservation= new Reservation(second,firstguest,guestsOfHotelList,LocalDate.of(2021, 8, 1), LocalDate.of(2021, 8, 14), false, otherGuest.size());
             reservationList.add(reservation);
                 System.out.println("Detaily rezervací po vložení:");
             for (Reservation allreservation : reservationList) {
@@ -73,6 +73,12 @@ public class Main {
             int index = 2;
                 System.out.println("Rezervace se zadaným indexem:");
                 System.out.println("Pokoj č.: " + reservationList.get(index).getRoom().getNumberOfRoom() + " ;host: " + reservationList.get(index).getGuestsOfHotel().getName()+" "+reservationList.get(index).getGuestsOfHotel().getSurname()+", "+ reservationList.get(index).getOtherGuest().getFirst().getName()+" "+reservationList.get(index).getOtherGuest().getFirst().getSurname()+" ;příjezd: " + reservationList.get(index).getCheckInDate() + " ;odjezd: " + reservationList.get(index).getCheckOutDate() + " ;typ pobytu: " + reservationList.get(index).isStayType());
+//Celkovy pocet hostu
+            int sum = 0;
+            for (Reservation reservation1 : reservationList) {
+                sum += reservation1.getOtherGuest().size();
+            }
+                System.out.println("Celkový počet hostů: " + sum);
 
 //Získání seznamu rezervací
                 System.out.println("Seznam rezervací:");

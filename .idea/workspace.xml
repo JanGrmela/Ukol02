@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e895ee5b-c274-4471-aa39-96c32d6612c7" name="Changes" comment="Average Guest of reservation">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Reservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715514856742</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1715699011450</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715699011450</updated>
     </task>
     <task id="LOCAL-00005" summary="Initial commit">
       <option name="closed" value="true" />
@@ -495,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718040869402</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Average Guest of reservation">
+      <option name="closed" value="true" />
+      <created>1718041625325</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1718041625325</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
